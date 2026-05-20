@@ -1,4 +1,6 @@
 import './App.css'
+import { Reveal } from './Reveal.jsx'
+import { RevealBlocks } from './RevealBlocks.jsx'
 
 /* ── SVG Icons ── */
 const IconGear = () => (
@@ -145,13 +147,13 @@ function App() {
           </span>
           <div>
             <p className="brand-title">Triết học Mác – Lênin</p>
-            <p className="brand-subtitle">Chương 2 · Sứ mệnh lịch sử của giai cấp công nhân</p>
+            <p className="brand-subtitle">Chương 2 · Giai cấp công nhân thời đại 4.0</p>
           </div>
         </div>
         <nav className="nav">
           <a href="#phan-1">Cơ sở lý luận</a>
           <a href="#phan-2">Thời đại 4.0</a>
-          <a href="#phan-3">AI & công nhân</a>
+          <a href="#phan-3">Mác – Lênin</a>
           <a href="#phan-4">Thách thức · Cơ hội</a>
           <a href="#phan-5">Việt Nam 2030</a>
         </nav>
@@ -171,29 +173,34 @@ function App() {
           <span className="orb orb-7" />
         </div>
 
+        <Reveal className="hero-reveal-col">
         <div className="hero-content">
           <p className="eyebrow">Bài thuyết trình nhóm · Triết học Mác – Lênin</p>
-          <h1>Sứ mệnh lịch sử của giai cấp công nhân trong thời đại 4.0</h1>
+          <h1>Giai cấp công nhân thời đại 4.0: Thách thức và cơ hội</h1>
           <p className="lead">
-            Từ cơ sở lý luận của chủ nghĩa Mác – Lênin đến những biến đổi của giai cấp
-            công nhân hiện đại, cùng câu hỏi về "công nhân số" và vai trò của AI.
+            Khảo sát{' '}
+            <strong>sứ mệnh lịch sử của giai cấp công nhân</strong> theo chủ nghĩa Mác – Lênin,
+            cách mạng công nghiệp 4.0 đang đổi hình thức lao động thế nào, và dòng thông điệp
+            gửi gắm tương lai gắn với định hướng phát triển đất nước đến 2030.
           </p>
           <div className="hero-meta">
             <div className="meta-item">
-              <p className="meta-label">Chủ đề</p>
-              <p className="meta-value">Công nhân 4.0: Thách thức & Cơ hội</p>
+              <p className="meta-label">Khung chủ đề</p>
+              <p className="meta-value">GC công nhân 4.0 &amp; 5 nội dung dàn bài</p>
             </div>
             <div className="meta-item">
               <p className="meta-label">Mục tiêu</p>
-              <p className="meta-value">Khái quát lý luận · Phân tích thực tiễn</p>
+              <p className="meta-value">Lý luận giáo trình · Thực tiễn &amp; văn kiện Đại hội</p>
             </div>
             <div className="meta-item">
               <p className="meta-label">Thông điệp</p>
-              <p className="meta-value">Làm chủ công nghệ để phát triển bền vững</p>
+              <p className="meta-value">Làm chủ công nghệ, phát triển bền vững, con người là trung tâm</p>
             </div>
           </div>
         </div>
+        </Reveal>
 
+        <Reveal className="hero-reveal-col" delay={110}>
         <div className="hero-card">
           {/* Rotating gear icon */}
           <svg className="hero-card-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -212,125 +219,225 @@ function App() {
           </svg>
           <h3>Tóm tắt nhanh</h3>
           <ul>
-            <li>Giai cấp công nhân là lực lượng sản xuất tiên tiến của lịch sử.</li>
-            <li>4.0 tạo ra công nhân tri thức và công nhân số.</li>
-            <li>AI thay đổi hình thức lao động nhưng không xóa bỏ giai cấp công nhân.</li>
-            <li>Thách thức lớn: tự động hóa, bất bình đẳng số, thiếu kỹ năng.</li>
-            <li>Cơ hội: nghề mới, tăng năng suất, nâng cao vị thế người lao động.</li>
+            <li>Khái niệm GC công nhân: tập đoàn xã hội gắn đại công nghiệp; không sở hữu TLSX chính; bán sức lao động.</li>
+            <li>4.0: từ lao động chân tay sang trí tuệ; “công nhân số”, nền tảng, làm việc từ xa.</li>
+            <li>Tiêu chí Mác – Lênin giúp phân tích trình tự phức tạp: lập trình viên, y bác sĩ, công chức, shipper…</li>
+            <li>Thách thức: tự động hóa, bất bình đẳng số, áp lực lao động nền tảng.</li>
+            <li>Việt Nam: chuyển đổi số, GC công nhân hiện đại, kinh tế số ~30% GDP đến 2030.</li>
           </ul>
         </div>
+        </Reveal>
       </section>
 
       {/* ── PHẦN I ── */}
       <section className="section" id="phan-1">
         <div className="section-header">
-          <div className="section-tag-row">
-            <IconBook />
-            <p className="section-tag">PHẦN I</p>
-          </div>
-          <h2>Cơ sở lý luận về giai cấp công nhân</h2>
-          <p className="section-desc">
-            Quan điểm cơ bản của chủ nghĩa Mác – Lênin về giai cấp công nhân và sứ mệnh lịch sử.
-          </p>
+          <RevealBlocks>
+            <div className="section-tag-row">
+              <IconBook />
+              <p className="section-tag">PHẦN I</p>
+            </div>
+            <h2>Cơ sở lý luận về giai cấp công nhân</h2>
+            <p className="section-desc">
+              Quan điểm cơ bản của chủ nghĩa Mác – Lênin về giai cấp công nhân và sứ mệnh lịch sử.
+            </p>
+          </RevealBlocks>
         </div>
 
         <div className="grid two">
           <article className="card">
-            <h3>Khái niệm và đặc điểm</h3>
-            <p>
-              Giai cấp công nhân ra đời cùng nền đại công nghiệp, đại diện cho lực lượng sản xuất
-              tiên tiến và phương thức sản xuất hiện đại.
-            </p>
-            <div className="pill-group">
-              <span className="pill">Sản phẩm của đại công nghiệp</span>
-              <span className="pill">Không sở hữu tư liệu sản xuất</span>
-              <span className="pill">Bán sức lao động để sinh sống</span>
-            </div>
-            <ul className="list">
-              <li>Lao động bằng phương thức công nghiệp hiện đại, sử dụng máy móc.</li>
-              <li>Tính tổ chức, kỷ luật và xã hội hóa cao.</li>
-              <li>Đại biểu cho xu hướng phát triển tiến bộ của xã hội.</li>
-            </ul>
+            <RevealBlocks>
+              <h3>Khái niệm và đặc điểm</h3>
+              <p>
+                Giai cấp công nhân ra đời cùng nền đại công nghiệp, đại diện cho lực lượng sản xuất
+                tiên tiến và phương thức sản xuất hiện đại.
+              </p>
+              <div className="pill-group">
+                <span className="pill">Sản phẩm của đại công nghiệp</span>
+                <span className="pill">Không sở hữu tư liệu sản xuất</span>
+                <span className="pill">Bán sức lao động để sinh sống</span>
+              </div>
+              <ul className="list">
+                <li>Lao động bằng phương thức công nghiệp hiện đại, sử dụng máy móc.</li>
+                <li>Tính tổ chức, kỷ luật và xã hội hóa cao.</li>
+                <li>Đại biểu cho xu hướng phát triển tiến bộ của xã hội.</li>
+              </ul>
+            </RevealBlocks>
           </article>
 
           <article className="card">
-            <h3>Sứ mệnh lịch sử</h3>
-            <p>
-              Thông qua Đảng Cộng sản, giai cấp công nhân lãnh đạo nhân dân lao động xóa bỏ bóc
-              lột, xây dựng xã hội xã hội chủ nghĩa và cộng sản chủ nghĩa.
-            </p>
-            <ul className="list">
-              <li><strong>Kinh tế:</strong> tạo cơ sở vật chất, thúc đẩy lực lượng sản xuất.</li>
-              <li><strong>Chính trị – xã hội:</strong> giành chính quyền, xây dựng dân chủ XHCN.</li>
-              <li><strong>Văn hóa – tư tưởng:</strong> xây dựng hệ giá trị mới và con người mới.</li>
-            </ul>
+            <RevealBlocks>
+              <h3>Sứ mệnh lịch sử</h3>
+              <p>
+                Thông qua Đảng Cộng sản, giai cấp công nhân lãnh đạo nhân dân lao động đấu tranh xóa bỏ
+                chế độ bóc lột, xây dựng xã hội xã hội chủ nghĩa và cộng sản chủ nghĩa.
+              </p>
+              <ul className="list">
+                <li>
+                  <strong>Kinh tế:</strong> lực lượng sản xuất hàng đầu; tạo CSVC – KT; xây quan hệ sản xuất
+                  mới trên chế độ công hữu TLSX; công nghiệp hóa, hiện đại hóa.
+                </li>
+                <li>
+                  <strong>Chính trị – xã hội:</strong> giành chính quyền; nhà nước mang bản chất giai cấp
+                  công nhân; dân chủ XHCN; công bằng – tiến bộ.
+                </li>
+                <li>
+                  <strong>Văn hóa – tư tưởng:</strong> hệ giá trị lao động, công bằng, dân chủ, bình đẳng,
+                  tự do; đấu tranh tư tưởng lạc hậu; củng cố Mác – Lênin.
+                </li>
+              </ul>
+            </RevealBlocks>
+          </article>
+        </div>
+
+        <div className="grid two narrow-top">
+          <article className="card soft">
+            <RevealBlocks>
+              <h3>Hai phương diện nhận diện (Mác – Lênin)</h3>
+              <p className="muted-intro">Giai cấp công nhân được xác định thống nhất trên kinh tế – xã hội và chính trị – xã hội.</p>
+              <ul className="list">
+                <li>
+                  <strong>Kinh tế – xã hội:</strong> chủ thể của đại công nghiệp; lao động công nghiệp hiện đại;
+                  xã hội hóa cao, năng suất lớn; đại diện LLSX tiên tiến.
+                </li>
+                <li>
+                  <strong>Chính trị – xã hội:</strong> không sở hữu TLSX chủ yếu; bán sức lao động; bị bóc lột
+                  giá trị thặng dư; lợi ích đối lập với tư sản.
+                </li>
+              </ul>
+            </RevealBlocks>
+          </article>
+          <article className="card soft">
+            <RevealBlocks>
+              <h3>Đặc điểm bổ sung</h3>
+              <ul className="list">
+                <li>Tổ chức, kỷ luật, tinh thần cách mạng được rèn trong công nghiệp hiện đại.</li>
+                <li>Tập đoàn xã hội ổn định, gắn quá trình phát triển công nghiệp.</li>
+                <li>Lực lượng chủ yếu của quá độ từ CNTB lên chủ nghĩa xã hội.</li>
+              </ul>
+            </RevealBlocks>
           </article>
         </div>
 
         <div className="grid three">
           <article className="card soft">
-            <h3>Điều kiện khách quan</h3>
-            <ul className="list">
-              <li>Địa vị kinh tế của giai cấp công nhân trong nền đại công nghiệp.</li>
-              <li>Tạo ra phần lớn của cải vật chất xã hội.</li>
-              <li>Có khả năng lãnh đạo xây dựng phương thức sản xuất mới.</li>
-            </ul>
+            <RevealBlocks>
+              <h3>Điều kiện khách quan</h3>
+              <ul className="list">
+                <li>Địa vị kinh tế của giai cấp công nhân trong nền đại công nghiệp.</li>
+                <li>Tạo ra phần lớn của cải vật chất xã hội.</li>
+                <li>Có khả năng lãnh đạo xây dựng phương thức sản xuất mới.</li>
+              </ul>
+            </RevealBlocks>
           </article>
           <article className="card soft">
-            <h3>Điều kiện chủ quan</h3>
-            <ul className="list">
-              <li>Phát triển về số lượng, chất lượng và trình độ chính trị.</li>
-              <li>Vai trò của Đảng Cộng sản – đội tiên phong.</li>
-              <li>Liên minh công – nông – các tầng lớp lao động khác.</li>
-            </ul>
+            <RevealBlocks>
+              <h3>Điều kiện chủ quan</h3>
+              <ul className="list">
+                <li>Phát triển về số lượng, chất lượng và trình độ chính trị.</li>
+                <li>Vai trò của Đảng Cộng sản – đội tiên phong.</li>
+                <li>Liên minh công – nông – các tầng lớp lao động khác.</li>
+              </ul>
+            </RevealBlocks>
           </article>
           <article className="card soft">
-            <h3>Kết luận phần I</h3>
-            <p>
-              Giai cấp công nhân là lực lượng chủ yếu của tiến trình lịch sử quá độ từ chủ nghĩa
-              tư bản lên chủ nghĩa xã hội.
-            </p>
+            <RevealBlocks>
+              <h3>Kết luận phần I</h3>
+              <p>
+                Giai cấp công nhân là lực lượng chủ yếu của tiến trình lịch sử quá độ từ chủ nghĩa
+                tư bản lên chủ nghĩa xã hội. Với địa vị và phẩm chất cách mạng, giai cấp này có sứ mệnh
+                lãnh đạo nhân dân lao động tiến tới xã hội mới.
+              </p>
+            </RevealBlocks>
           </article>
-        </div>
-      </section>
-
-      {/* ── PHẦN II ── */}
-      <section className="section" id="phan-2">
-        <div className="section-header">
-          <div className="section-tag-row">
-            <IconCpu />
-            <p className="section-tag">PHẦN II</p>
-          </div>
-          <h2>Giai cấp công nhân trong thời đại 4.0</h2>
-          <p className="section-desc">
-            Cách mạng công nghiệp 4.0 làm biến đổi cơ cấu lao động và hình thức của giai cấp công nhân.
-          </p>
         </div>
 
         <div className="grid two">
           <article className="card">
-            <h3>Khái quát 4.0</h3>
-            <div className="badge-row">
-              <span className="badge">AI</span>
-              <span className="badge">Robot</span>
-              <span className="badge">Big Data</span>
-              <span className="badge">IoT</span>
-              <span className="badge">Cloud</span>
-              <span className="badge">Blockchain</span>
-            </div>
-            <p>
-              4.0 là giai đoạn sản xuất dựa trên công nghệ số, trí tuệ nhân tạo và tự động hóa thông minh.
-              Không chỉ đổi mới công cụ mà còn thay đổi cách con người sản xuất, làm việc và giao tiếp.
-            </p>
+            <RevealBlocks>
+              <h3>Giai cấp công nhân Việt Nam</h3>
+              <p>
+                Ra đời cuối thế kỷ XIX – đầu thế kỷ XX trong bối cảnh khai thác thuộc địa; có truyền thống
+                yêu nước; trở thành lực lượng lãnh đạo cách mạng thông qua Đảng Cộng sản Việt Nam.
+              </p>
+              <ul className="list">
+                <li>Kết nối khát vọng dân tộc với con đường tiến lên chủ nghĩa xã hội.</li>
+                <li>Trong hiện tại: đội ngũ công nhân có trình độ là nhân tố cho cạnh tranh và chuyển đổi số.</li>
+              </ul>
+            </RevealBlocks>
           </article>
           <article className="card">
-            <h3>Sự biến đổi của giai cấp công nhân</h3>
-            <ul className="list">
-              <li>Từ lao động chân tay sang lao động trí tuệ.</li>
-              <li>Xuất hiện "công nhân số" trên nền tảng công nghệ.</li>
-              <li>Môi trường lao động linh hoạt: nhà máy thông minh, làm việc từ xa.</li>
-              <li>Áp lực học tập và cập nhật kỹ năng liên tục.</li>
-            </ul>
+            <RevealBlocks>
+              <h3>Quan điểm Hiến pháp Việt Nam</h3>
+              <p>
+                Hiến pháp khẳng định nhà nước ta có bản chất giai cấp công nhân. Nền tảng chính trị là
+                liên minh chặt chẽ:
+              </p>
+              <ul className="list">
+                <li>Giai cấp công nhân,</li>
+                <li>Giai cấp nông dân,</li>
+                <li>Tầng lớp trí thức.</li>
+              </ul>
+              <p className="tight-p">
+                Ý nghĩa: ghi nhận vai trò trung tâm của giai cấp công nhân trong sự nghiệp xây dựng và
+                bảo vệ Tổ quốc.
+              </p>
+            </RevealBlocks>
+          </article>
+        </div>
+      </section>
+
+      <section className="section" id="phan-2">
+        <div className="section-header">
+          <RevealBlocks>
+            <div className="section-tag-row">
+              <IconCpu />
+              <p className="section-tag">PHẦN II</p>
+            </div>
+            <h2>Giai cấp công nhân trong thời đại 4.0</h2>
+            <p className="section-desc">
+              Cách mạng công nghiệp 4.0 làm biến đổi cơ cấu lao động và hình thức của giai cấp công nhân.
+            </p>
+          </RevealBlocks>
+        </div>
+
+        <div className="grid two">
+          <article className="card">
+            <RevealBlocks>
+              <h3>Khái quát 4.0</h3>
+              <div className="badge-row">
+                <span className="badge">AI</span>
+                <span className="badge">Robot</span>
+                <span className="badge">Big Data</span>
+                <span className="badge">IoT</span>
+                <span className="badge">Cloud</span>
+                <span className="badge">Blockchain</span>
+              </div>
+              <p>
+                Cuộc Cách mạng công nghiệp lần thứ tư dựa trên công nghệ số, trí tuệ nhân tạo và tự động hóa
+                thông minh. Không chỉ thay đổi công cụ mà làm thay đổi toàn diện cách con người sản xuất,
+                làm việc và giao tiếp. Nhiều ngành nghề mới (kỹ sư AI, phân tích dữ liệu, an ninh mạng,
+                sáng tạo nội dung số…) song song nguy cơ lao động giản đơn bị thay thế bởi robot và tự động hóa.
+              </p>
+            </RevealBlocks>
+          </article>
+          <article className="card">
+            <RevealBlocks>
+              <h3>Sự biến đổi của giai cấp công nhân</h3>
+              <ul className="list">
+                <li>Từ lao động chân tay sang lao động trí tuệ — vận hành tự động hóa, phần mềm, phối hợp với AI.</li>
+                <li>
+                  <strong>&ldquo;Công nhân số&rdquo;:</strong> lập trình viên, kỹ sư AI, phân tích dữ liệu,
+                  shipper công nghệ, tài xế công nghệ, freelancer trực tuyến, nhân sự vận hành nền tảng…
+                </li>
+                <li>Môi trường mới: nhà máy thông minh, làm việc từ xa, lao động linh hoạt theo dự án.</li>
+                <li>Áp lực học tập liên tục, cạnh tranh cao, phải cập nhật kiến thức để không tụt hậu.</li>
+              </ul>
+              <p className="tight-p">
+                Theo Mác – Lênin, nếu không sở hữu TLSX chủ yếu và phải lao động tạo giá trị trong nền
+                sản xuất hiện đại (kể cả sản xuất số), nhiều nhóm trên vẫn mang đặc điểm giai cấp công nhân hiện đại.
+              </p>
+            </RevealBlocks>
           </article>
         </div>
 
@@ -338,193 +445,310 @@ function App() {
           <div className="timeline-item">
             <span className="timeline-dot" />
             <div className="timeline-content">
-              <h4>Vai trò mới</h4>
-              <p>Giai cấp công nhân tiếp tục là lực lượng sản xuất chủ yếu, thúc đẩy chuyển đổi số.</p>
+              <RevealBlocks step={80}>
+                <h4>Vai trò mới</h4>
+                <p>
+                  Tiếp tục là lực lượng sản xuất chủ yếu, thúc đẩy chuyển đổi số, công nghiệp hóa và hiện đại hóa.
+                  Trong bối cảnh Việt Nam hội nhập sâu, đội ngũ công nhân có trình độ là nhân tố quyết định năng lực cạnh tranh.
+                </p>
+              </RevealBlocks>
             </div>
           </div>
           <div className="timeline-item">
             <span className="timeline-dot" />
             <div className="timeline-content">
-              <h4>Năng lực cốt lõi</h4>
-              <p>Kỷ luật, sáng tạo, làm chủ công nghệ và trách nhiệm xã hội.</p>
+              <RevealBlocks step={80}>
+                <h4>Năng lực cốt lõi</h4>
+                <p>Kỷ luật, sáng tạo, làm chủ công nghệ và trách nhiệm xã hội.</p>
+              </RevealBlocks>
             </div>
           </div>
           <div className="timeline-item">
             <span className="timeline-dot" />
             <div className="timeline-content">
-              <h4>Kết luận phần II</h4>
-              <p>Giai cấp công nhân không biến mất mà đang hiện đại hóa và tri thức hóa.</p>
+              <RevealBlocks step={80}>
+                <h4>Kết luận phần II</h4>
+                <p>Giai cấp công nhân không biến mất mà đang hiện đại hóa và tri thức hóa.</p>
+              </RevealBlocks>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── PHẦN III ── */}
       <section className="section" id="phan-3">
         <div className="section-header">
-          <div className="section-tag-row">
-            <IconRobot />
-            <p className="section-tag">PHẦN III</p>
-          </div>
-          <h2>AI là giai cấp công nhân trong thời đại 4.0?</h2>
-          <p className="section-desc">
-            Tranh luận về các nhóm lao động mới và tiêu chí xác định theo quan điểm Mác – Lênin.
-          </p>
+          <RevealBlocks>
+            <div className="section-tag-row">
+              <IconRobot />
+              <p className="section-tag">PHẦN III</p>
+            </div>
+            <h2>Ai là &ldquo;công nhân&rdquo; trong thời đại 4.0?</h2>
+            <p className="section-desc">
+              Tiêu đề gợi mở tranh luận: trí tuệ nhân tạo <strong>không</strong> là giai cấp xã hội; trọng tâm là
+              phân tích <strong>người lao động</strong> trong nền sản xuất hiện đại theo các tiêu chí Mác – Lênin.
+            </p>
+          </RevealBlocks>
         </div>
 
         <div className="grid three">
           <article className="card">
-            <h3>Cách hiểu truyền thống</h3>
-            <p>
-              Công nhân từng được hiểu là lao động chân tay trong nhà máy. 4.0 mở rộng khái niệm khi
-              lao động trí tuệ và công nghệ trở thành chủ đạo.
-            </p>
+            <RevealBlocks>
+              <h3>Cách hiểu truyền thống</h3>
+              <p>
+                Công nhân thường gắn với lao động chân tay trong nhà máy, xí nghiệp (Cách mạng công nghiệp
+                1–3). Sang 4.0, lao động dựa nhiều hơn vào tri thức, công nghệ và xử lý thông tin — đặt câu hỏi
+                liệu khái niệm còn giới hạn trong xưởng máy hay không.
+              </p>
+            </RevealBlocks>
           </article>
           <article className="card">
-            <h3>Nhóm lao động gây tranh luận</h3>
-            <ul className="list">
-              <li>Lập trình viên, kỹ sư AI.</li>
-              <li>Giáo viên, bác sĩ, y tá.</li>
-              <li>Streamer, freelancer, lao động nền tảng.</li>
-            </ul>
+            <RevealBlocks>
+              <h3>Nhóm lao động gây tranh luận</h3>
+              <ul className="list">
+                <li>Lập trình viên, kỹ sư AI, phân tích dữ liệu.</li>
+                <li>Giáo viên, bác sĩ, y tá (thường gần trí thức; cần xét lao động thuê cụ thể).</li>
+                <li>Công chức nhà nước; streamer, freelancer, shipper, tài xế công nghệ.</li>
+              </ul>
+            </RevealBlocks>
           </article>
           <article className="card">
-            <h3>Tiêu chí cốt lõi</h3>
-            <ul className="list">
-              <li>Có sở hữu tư liệu sản xuất hay không.</li>
-              <li>Có phải bán sức lao động hay không.</li>
-              <li>Có tham gia nền sản xuất hiện đại hay không.</li>
-            </ul>
+            <RevealBlocks>
+              <h3>Tiêu chí cốt lõi</h3>
+              <ul className="list">
+                <li>Có sở hữu tư liệu sản xuất hay không.</li>
+                <li>Có phải bán sức lao động hay không.</li>
+                <li>Có tham gia nền sản xuất hiện đại hay không.</li>
+              </ul>
+            </RevealBlocks>
+          </article>
+        </div>
+
+        <div className="debate-grid">
+          <article className="card debate-card">
+            <RevealBlocks step={80}>
+              <h4>Lập trình viên, kỹ sư AI</h4>
+              <p>
+                Phần lớn không sở hữu doanh nghiệp hay TLSX lớn; bán sức lao động trí tuệ theo hợp đồng, nhận lương —
+                nhiều trường hợp mang đặc điểm giai cấp công nhân hiện đại.
+              </p>
+            </RevealBlocks>
+          </article>
+          <article className="card debate-card">
+            <RevealBlocks step={80}>
+              <h4>Giáo viên, bác sĩ, y tá</h4>
+              <p>
+                Thường được xếp gần tầng lớp trí thức hơn là &ldquo;công nhân nhà máy&rdquo;, nhưng nếu làm thuê
+                trong cơ chế tương tự, vẫn cần xét vị trí trong quan hệ sản xuất cụ thể.
+              </p>
+            </RevealBlocks>
+          </article>
+          <article className="card debate-card">
+            <RevealBlocks step={80}>
+              <h4>Công chức nhà nước</h4>
+              <p>
+                Làm việc trong bộ máy nhà nước, không trực tiếp tham gia sản xuất công nghiệp — thường{' '}
+                <strong>không</strong> được xem là giai cấp công nhân theo nghĩa hẹp.
+              </p>
+            </RevealBlocks>
+          </article>
+          <article className="card debate-card">
+            <RevealBlocks step={80}>
+              <h4>Streamer, freelancer, shipper…</h4>
+              <p>
+                Phụ thuộc nền tảng, thuật toán, doanh nghiệp công nghệ; ranh giới lao động tự do và làm thuê
+                mờ đi — vẫn phân tích qua tiêu chí sở hữu TLSX và bán sức lao động.
+              </p>
+            </RevealBlocks>
           </article>
         </div>
 
         <div className="callout">
-          <h3>Kết luận phần III</h3>
-          <p>
-            Giai cấp công nhân hiện đại bao gồm lao động công nghiệp, lao động trí tuệ, lao động công nghệ
-            và lao động trên nền tảng số. Công nghệ tái định nghĩa hình thức nhưng không thay đổi bản chất
-            quan hệ lao động.
-          </p>
+          <RevealBlocks step={90}>
+            <h3>Kết luận phần III</h3>
+            <p>
+              Giai cấp công nhân hiện đại bao gồm lao động công nghiệp, lao động trí tuệ, lao động công nghệ
+              và lao động trên nền tảng số. Công nghệ tái định nghĩa hình thức nhưng không thay đổi bản chất
+              quan hệ lao động.
+            </p>
+          </RevealBlocks>
         </div>
 
         <div className="card emphasis">
-          <h3>Liên hệ sinh viên</h3>
-          <p>
-            Sinh viên là lực lượng lao động tương lai của xã hội số. Cần nâng cao chuyên môn, kỹ năng số,
-            tư duy sáng tạo và khả năng thích nghi để đáp ứng yêu cầu của thời đại 4.0.
-          </p>
+          <RevealBlocks step={90}>
+            <h3>Liên hệ sinh viên</h3>
+            <p>
+              Sinh viên hôm nay là lực lượng lao động tương lai: sau khi ra trường, phần lớn sẽ làm việc cho
+              doanh nghiệp, tham gia nền kinh tế số, bán sức lao động trí tuệ và sử dụng AI trong công việc.
+              Cần nâng cao chuyên môn, kỹ năng số, tư duy sáng tạo và khả năng thích nghi với môi trường lao động
+              hiện đại.
+            </p>
+          </RevealBlocks>
         </div>
       </section>
 
-      {/* ── PHẦN IV ── */}
       <section className="section" id="phan-4">
         <div className="section-header">
-          <div className="section-tag-row">
-            <IconTrend />
-            <p className="section-tag">PHẦN IV</p>
-          </div>
-          <h2>Thách thức và cơ hội của giai cấp công nhân thời đại 4.0</h2>
+          <RevealBlocks>
+            <div className="section-tag-row">
+              <IconTrend />
+              <p className="section-tag">PHẦN IV</p>
+            </div>
+            <h2>Thách thức và cơ hội của giai cấp công nhân thời đại 4.0</h2>
+          </RevealBlocks>
         </div>
 
         <div className="grid two">
           <article className="card">
-            <h3>Thách thức nổi bật</h3>
-            <ul className="list">
-              <li>Nguy cơ thất nghiệp do tự động hóa và AI.</li>
-              <li>Áp lực học tập liên tục vì vòng đời kỹ năng ngắn.</li>
-              <li>Bất bình đẳng số giữa nhóm lao động trình độ cao và phổ thông.</li>
-              <li>Lao động nền tảng thiếu bảo vệ và cơ chế thương lượng.</li>
-            </ul>
+            <RevealBlocks>
+              <h3>Thách thức nổi bật</h3>
+              <ul className="list">
+                <li>Robot và AI thay thế lao động giản đơn, lặp lại — nguy cơ thất nghiệp cơ cấu.</li>
+                <li>Vòng đời kỹ năng rút ngắn (ước tính trước đây 20–30 năm, nay nhiều lĩnh vực 5–7 năm).</li>
+                <li>Bất bình đẳng số: đô thị – nông thôn, lao động có đào tạo và lao động phổ thông.</li>
+                <li>Lao động nền tảng: thu nhập bấp bênh, phụ thuộc thuật toán; thiếu hợp đồng và bảo hiểm.</li>
+              </ul>
+            </RevealBlocks>
           </article>
           <article className="card">
-            <h3>Cơ hội mở ra</h3>
-            <ul className="list">
-              <li>Tiếp cận và làm chủ tư liệu sản xuất mới: AI, dữ liệu, tự động hóa.</li>
-              <li>Nhiều nghề mới xuất hiện: AI, an ninh mạng, phân tích dữ liệu.</li>
-              <li>Hình thành tầng lớp "công nhân tri thức".</li>
-              <li>Điều kiện làm việc và mức sống có thể được cải thiện nhờ năng suất tăng.</li>
-            </ul>
+            <RevealBlocks>
+              <h3>Cơ hội mở ra</h3>
+              <ul className="list">
+                <li>Tiếp cận và làm chủ công nghệ: AI, dữ liệu, tự động hóa như năng lực — không chỉ mối đe dọa.</li>
+                <li>Nghề mới: kỹ sư AI, phân tích dữ liệu, an ninh mạng, sáng tạo nội dung, kỹ sư robot…</li>
+                <li>&ldquo;Công nhân tri thức&rdquo; — tri thức &amp; kỹ năng số như tư liệu lao động chủ đạo.</li>
+                <li>Giảm lao động nặng nhọc/nguy hiểm; năng suất tăng tạo cơ sở cải thiện đời sống (ILO ghi nhận giảm tai nạn khi tự động hóa hiệu quả).</li>
+              </ul>
+            </RevealBlocks>
           </article>
+        </div>
+
+        <div className="fact-strip">
+          <RevealBlocks step={90}>
+            <p>
+              <strong>Thực tiễn:</strong> WEF (2023) cảnh báo ~83 triệu việc làm toàn cầu có nguy cơ bị thay thế
+              đến 2027; nhiều KCN tại Bình Dương, Đồng Nai triển khai dây chuyền tự động trong may mặc, điện tử.
+              McKinsey (2023): 87% doanh nghiệp thiếu kỹ năng số; Việt Nam ~27% lao động qua đào tạo (2023) — hơn 70% đối mặt
+              áp lực chuyển đổi.
+            </p>
+          </RevealBlocks>
         </div>
 
         <div className="stats">
           <div className="stat">
             <div className="stat-icon"><IconWorld /></div>
-            <h3>83M</h3>
-            <p>Việc làm toàn cầu có nguy cơ bị thay thế đến 2027 (WEF 2023).</p>
+            <RevealBlocks step={80}>
+              <h3>83M</h3>
+              <p>Việc làm toàn cầu có nguy cơ bị thay thế đến 2027 (WEF 2023).</p>
+            </RevealBlocks>
           </div>
           <div className="stat">
             <div className="stat-icon"><IconAlertTrend /></div>
-            <h3>87%</h3>
-            <p>Doanh nghiệp thiếu hụt kỹ năng số (McKinsey 2023).</p>
+            <RevealBlocks step={80}>
+              <h3>87%</h3>
+              <p>Doanh nghiệp thiếu hụt kỹ năng số (McKinsey 2023).</p>
+            </RevealBlocks>
           </div>
           <div className="stat">
             <div className="stat-icon"><IconFlag /></div>
-            <h3>27%</h3>
-            <p>Tỷ lệ lao động qua đào tạo tại Việt Nam (2023).</p>
+            <RevealBlocks step={80}>
+              <h3>27%</h3>
+              <p>Tỷ lệ lao động qua đào tạo tại Việt Nam (2023).</p>
+            </RevealBlocks>
           </div>
         </div>
       </section>
 
-      {/* ── PHẦN V ── */}
       <section className="section" id="phan-5">
         <div className="section-header">
-          <div className="section-tag-row">
-            <IconStar />
-            <p className="section-tag">PHẦN V</p>
-          </div>
-          <h2>Việt Nam, định hướng 2030 và thông điệp tương lai</h2>
+          <RevealBlocks>
+            <div className="section-tag-row">
+              <IconStar />
+              <p className="section-tag">PHẦN V</p>
+            </div>
+            <h2>Thực tiễn Việt Nam, định hướng 2030 và thông điệp tương lai</h2>
+            <p className="section-desc">
+              Thông tin thêm: {' '}
+              <a
+                className="inline-link"
+                href="https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-dai-hoi-dai-bieu-toan-quoc-lan-thu-xiv-cua-dang-119260206221643667.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                văn kiện Đại hội đại biểu toàn quốc lần thứ XIV
+              </a>
+            </p>
+          </RevealBlocks>
         </div>
 
         <div className="grid two">
           <article className="card">
-            <h3>Chuyển đổi số quốc gia</h3>
+            <h3>Việt Nam trong chuyển đổi số</h3>
             <ul className="list">
-              <li>Đưa kinh tế số đạt khoảng 30% GDP vào năm 2030.</li>
-              <li>Thúc đẩy khoa học công nghệ và đổi mới sáng tạo.</li>
-              <li>Phát triển nguồn nhân lực số chất lượng cao.</li>
+              <li>
+                <strong>Chuyển đổi số quốc gia:</strong> lấy KHCN, đổi mới sáng tạo và chuyển đổi số làm động lực
+                chính cho phát triển nhanh, bền vững.
+              </li>
+              <li>
+                <strong>Kinh tế số:</strong> phấn đấu tỉ trọng kinh tế số ~30% GDP vào năm 2030.
+              </li>
+              <li>
+                <strong>KHCN &amp; công nghiệp hóa:</strong> hiện đại hóa dựa trên tiến bộ khoa học – công nghệ.
+              </li>
+              <li>
+                <strong>Nhân lực số:</strong> đột phá chất lượng nguồn nhân lực trình độ cao, đáp ứng đổi mới công nghệ.
+              </li>
             </ul>
           </article>
           <article className="card">
-            <h3>Quan điểm của Đảng và Nhà nước</h3>
+            <h3>Quan điểm Đảng và Nhà nước (khái quát từ văn kiện)</h3>
             <ul className="list">
-              <li>Xây dựng giai cấp công nhân Việt Nam hiện đại, lớn mạnh.</li>
-              <li>Đào tạo và bồi dưỡng kỹ năng nghề, kỷ luật lao động.</li>
-              <li>Hoàn thiện cơ chế, chính sách phát triển khoa học – công nghệ.</li>
+              <li>Xây dựng giai cấp công nhân hiện đại: đông về số lượng, vững về chất lượng; nhận thức chính trị rõ ràng.</li>
+              <li>Nâng cao trình độ: đào tạo, bồi dưỡng chuyên môn, kỹ năng nghề, kỷ luật — thích ứng CMCN 4.0.</li>
+              <li>Thúc đẩy KHCN: hoàn thiện cơ chế, chính sách; tạo nền tảng cho lực lượng sản xuất mới.</li>
+              <li>Nhân lực số: trang bị kỹ năng số toàn diện cho người lao động.</li>
             </ul>
           </article>
         </div>
 
         <div className="grid three">
           <article className="card soft">
-            <h3>Hình mẫu công nhân 2030</h3>
+            <h3>Hình mẫu công nhân đến 2030</h3>
             <ul className="list">
-              <li>Tri thức và kỹ năng số vững.</li>
-              <li>Biết sử dụng và làm chủ AI.</li>
-              <li>Sáng tạo, thích nghi nhanh, có đạo đức nghề nghiệp.</li>
+              <li>Có tri thức; chuyển từ hao phí cơ bắp sang hao phí trí lực.</li>
+              <li>Kỹ năng số toàn diện trong kinh tế số &amp; xã hội số.</li>
+              <li>Nắm bắt AI, tự động hóa; sáng tạo, thích nghi nhanh.</li>
+              <li>Đạo đức nghề nghiệp, kỷ luật, trách nhiệm công dân.</li>
             </ul>
           </article>
           <article className="card soft">
-            <h3>Trách nhiệm của thế hệ trẻ</h3>
+            <h3>Trách nhiệm thế hệ trẻ / sinh viên</h3>
             <ul className="list">
-              <li>Học tập nghiêm túc, rèn luyện kỹ năng số.</li>
-              <li>Ứng dụng AI có trách nhiệm.</li>
-              <li>Chủ động thích nghi với chuyển đổi số.</li>
+              <li>Kiên trì học tập — nuôi hoài bão, ý chí vươn lên.</li>
+              <li>Nâng kỹ năng số, ngoại ngữ, tư duy với AI trong giáo dục hiện đại.</li>
+              <li>Ứng dụng AI có trách nhiệm: đạo đức, an toàn, trách nhiệm xã hội.</li>
+              <li>Chủ động chuyển đổi số, làm chủ KHCN để tham gia nền kinh tế số.</li>
             </ul>
           </article>
           <article className="card soft">
-            <h3>Thông điệp cuối</h3>
-            <p>
-              Giai cấp công nhân không biến mất; công nghệ đang tái định nghĩa hình thức lao động. Con
-              người cần làm chủ công nghệ để phát triển xã hội bền vững.
-            </p>
+            <h3>Thông điệp khép lại</h3>
+            <ul className="list">
+              <li>Giai cấp công nhân không biến mất; xung đột lợi ích cơ bản trong quan hệ lao động vẫn cần được nhận thức đầy đủ.</li>
+              <li>Công nghệ và kinh tế tri thức tái cấu trúc nghề nghiệp, &ldquo;trí tuệ hóa&rdquo; — bản chất giai cấp không đơn giản bị xóa bỏ.</li>
+              <li>Lấy con người làm trung tâm: làm chủ công nghệ vì phát triển kinh tế – xã hội nhanh và bền vững.</li>
+            </ul>
           </article>
         </div>
       </section>
 
       <footer className="footer">
-        <p>Chúc buổi thuyết trình thành công!</p>
-        <a href="#top">Quay lại đầu trang</a>
+        <div className="footer-note">
+          <RevealBlocks step={90}>
+            <p>
+              <strong>Khai báo sử dụng AI:</strong> Phần code được hỗ trợ
+              bởi <strong>Cursor</strong>.
+            </p>
+          </RevealBlocks>
+        </div>
       </footer>
 
     </div>
