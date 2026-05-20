@@ -507,7 +507,7 @@ export default function App() {
             <IconRobot />
             <p className="section-tag">PHẦN III</p>
           </div>
-          <h2>AI là giai cấp công nhân trong thời đại 4.0?</h2>
+          <h2>Ai là giai cấp công nhân trong thời đại 4.0?</h2>
           <p className="section-desc">
             Tranh luận về các nhóm lao động mới và tiêu chí xác định theo quan điểm Mác – Lênin.
           </p>
