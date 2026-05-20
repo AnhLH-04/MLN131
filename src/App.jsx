@@ -1,5 +1,21 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import {
+  brickFactory,
+  hoaBinhDam,
+  metroSaigon,
+  nationalAssembly,
+  powerPlant1900,
+  studentsAi,
+  textileFactory,
+  tonkinCraft,
+  tramSaigon1900,
+  vibeCoding,
+  vinfast,
+  wefJobs1,
+  wefJobs2,
+} from './assets/images.js'
+import { ComparePair, MediaBlock, MediaFigure, MediaGrid } from './components/SectionMedia.jsx'
 
 /* ── SVG Icons ─────────────────────────────── */
 const IconGear = () => (
@@ -359,6 +375,27 @@ export default function App() {
             </p>
           </article>
         </div>
+
+        <MediaBlock title="Minh họa: Hai chiều của giai cấp công nhân Việt Nam">
+          <MediaGrid columns={2}>
+            <MediaFigure
+              title="Kinh tế – xã hội: Hình thành cùng công nghiệp"
+              src={brickFactory}
+              alt="Xưởng gạch Bourgoin và Meiffre tại Hà Nội, khoảng 1900"
+              caption="Xưởng gạch Bourgoin & Meiffre, Hà Nội (khoảng 1900) — lao động công nghiệp thời thuộc địa"
+              credit="Robert Dubois, Xứ Bắc Kỳ (1900) · Wikimedia Commons"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:X%C6%B0%E1%BB%9Fng_G%E1%BA%A1ch_c%E1%BB%A7a_c%C3%A1c_%C3%B4ng_Bourgoin_v%C3%A0_Meiffre_t%E1%BA%A1i_H%C3%A0_N%E1%BB%99i_(s%C3%A1ch_X%E1%BB%A9_B%E1%BA%AFc_K%E1%BB%B3_c%E1%BB%A7a_Robert_Dubois_n%C4%83m_1900).png"
+            />
+            <MediaFigure
+              title="Chính trị – pháp lý: Hiến pháp & bản chất Nhà nước"
+              src={nationalAssembly}
+              alt="Tòa nhà Quốc hội Việt Nam, Quảng trường Ba Đình, Hà Nội"
+              caption="Nhà Quốc hội — thể chế pháp lý khẳng định vai trò giai cấp công nhân và liên minh công – nông – trí thức"
+              credit="Wikimedia Commons"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:National_Assembly_Building_of_Vietnam.jpg"
+            />
+          </MediaGrid>
+        </MediaBlock>
       </section>
 
       {/* ══════════════ PHẦN II ══════════════ */}
@@ -425,6 +462,41 @@ export default function App() {
             </div>
           </div>
         </div>
+
+        <ComparePair
+          title="Năng lượng & công nghiệp: từ nhà máy điện đầu thế kỷ XX đến thủy điện quy mô lớn"
+          left={{
+            src: powerPlant1900,
+            alt: 'Nhà máy điện thành phố Hà Nội năm 1900',
+            caption: 'Nhà máy điện thành phố Hà Nội (khoảng 1900)',
+            credit: 'Trung tâm Lưu trữ quốc gia I · Phot. R. Dubois',
+            sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nh%C3%A0_m%C3%A1y_%C4%91i%E1%BB%87n_th%C3%A0nh_ph%E1%BB%91_H%C3%A0_N%E1%BB%99i_n%C4%83m_1900_-_Trung_t%C3%A2m_L%C6%B0u_tr%E1%BB%AF_qu%E1%BB%91c_gia_I.jpg',
+          }}
+          right={{
+            src: hoaBinhDam,
+            alt: 'Toàn cảnh đập và nhà máy thủy điện Hòa Bình',
+            caption: 'Nhà máy Thủy điện Hòa Bình — công nghiệp hóa hiện đại',
+            credit: 'Wikimedia Commons',
+            sourceUrl: 'https://commons.wikimedia.org/wiki/File:Tr%C3%AAn_%C4%91%E1%BA%ADp_th%E1%BB%A7y_%C4%91i%E1%BB%87n_H%C3%B2a_B%C3%ACnh_nh%C3%ACn_to%C3%A0n_c%E1%BA%A3nh_(3).jpg',
+          }}
+        />
+
+        <ComparePair
+          title="Hạ tầng đô thị: từ xe điện hơi Sài Gòn đến Metro số 1"
+          left={{
+            src: tramSaigon1900,
+            alt: 'Xe điện hơi Sài Gòn đầu thế kỷ XX, Boulevard Charner',
+            caption: 'Xe điện Sài Gòn — đầu thế kỷ XX',
+            credit: 'Wikimedia Commons · Compagnie Française de Tramways de l\'Indochine',
+            sourceUrl: 'https://commons.wikimedia.org/wiki/File:Le_Tramway_%C3%A0_Saigon,_early_1900s,_showing_1m-gauge_Borsig_0-4-0T_steam_locomotive_No_5_outside_the_Compagnie_Fran%C3%A7aise_de_Tramways_de_l%27Indochine_Boulevard_Charner_interchange_near_the_old_March%C3%A9.jpg',
+          }}
+          right={{
+            src: metroSaigon,
+            alt: 'Ga Metro số 1 TP.HCM, tàu điện ngầm hiện đại',
+            caption: 'Metro số 1 TP.HCM — giao thông công nghệ cao',
+            credit: 'Ảnh minh họa dự án Metro TP.HCM',
+          }}
+        />
       </section>
 
       {/* ══════════════ PHẦN III ══════════════ */}
@@ -466,6 +538,42 @@ export default function App() {
             </ul>
           </article>
         </div>
+
+        <ComparePair
+          title="Ai là công nhân? Từ thủ công truyền thống đến nhà máy dệt may hiện đại"
+          description="Khái niệm lao động mở rộng: không chỉ xưởng cơ khí mà cả lao động trong chuỗi sản xuất công nghiệp – dịch vụ."
+          left={{
+            src: tonkinCraft,
+            alt: 'Thợ thủ công làm ô tại miền Bắc, khoảng 1900',
+            caption: 'Thợ thủ công miền Bắc',
+            credit: 'Le Tonkin vers 1900 · Wikimedia Commons',
+            sourceUrl: 'https://commons.wikimedia.org/wiki/File:Le_Tonkin_vers_1900_-_Ki%E1%BA%BFn_Tr%C3%BAc_Vi%E1%BB%87t-Vietnam_Architecture_10.jpg',
+          }}
+          right={{
+            src: textileFactory,
+            alt: 'Công nhân may trong nhà máy dệt may tại Việt Nam',
+            caption: 'Nhà máy dệt may — lao động tập trung, quy mô lớn',
+            credit: 'ILO / Better Work · Wikimedia Commons',
+            sourceUrl: 'https://commons.wikimedia.org/wiki/File:Seco-betterwork.jpg',
+          }}
+        />
+
+        <MediaGrid columns={2}>
+          <MediaFigure
+            title="Lao động tri thức & công nghệ số"
+            src={vibeCoding}
+            alt="Minh họa lập trình viên làm việc với AI và vibe coding"
+            caption="Lập trình, AI và nền tảng số — hình thức lao động mới của thời đại 4.0"
+            credit="Ảnh minh họa · Vibe coding & AI"
+          />
+          <MediaFigure
+            title="Liên hệ sinh viên"
+            src={studentsAi}
+            alt="Sinh viên Việt Nam trong lớp học công nghệ AI"
+            caption="Sinh viên là lực lượng lao động tri thức tương lai — cần kỹ năng số và AI có trách nhiệm"
+            credit="Ảnh minh họa giáo dục · Nhóm MLN131"
+          />
+        </MediaGrid>
 
         <div className="callout reveal">
           <h3>Kết luận phần III</h3>
@@ -541,6 +649,19 @@ export default function App() {
             </div>
           </div>
         </div>
+
+        <MediaBlock
+          title="Cơ hội: Công nghiệp ô tô và sản xuất công nghệ cao tại Việt Nam"
+          description="Tự động hóa và chuỗi giá trị lớn tạo việc làm mới, đòi hỏi công nhân tri thức — đồng thời đặt áp lực nâng cao kỹ năng."
+        >
+          <MediaFigure
+            src={vinfast}
+            alt="Toàn cảnh nhà máy VinFast Hải Phòng lúc hoàng hôn"
+            caption="Nhà máy VinFast Hải Phòng — biểu tượng công nghiệp 4.0 và năng lực sản xuất hiện đại"
+            credit="Ảnh minh họa · Nhóm MLN131"
+            wide
+          />
+        </MediaBlock>
       </section>
 
       {/* ══════════════ PHẦN V ══════════════ */}
@@ -598,6 +719,30 @@ export default function App() {
             </p>
           </article>
         </div>
+
+        <MediaBlock
+          title="Định hướng 2030: Xu hướng việc làm toàn cầu (2025–2030)"
+          description="Nguồn nhân lực cần chuyển dịch sang kỹ năng số, AI và công nghệ xanh — phù hợp mục tiêu kinh tế số và công nhân tri thức của Việt Nam."
+        >
+          <MediaGrid columns={2}>
+            <MediaFigure
+              title="Nghề tăng trưởng nhanh nhất"
+              src={wefJobs1}
+              alt="Biểu đồ WEF: các nghề tăng trưởng và suy giảm nhanh nhất 2025-2030"
+              caption="Big Data, AI, phần mềm, xe điện tự hành… — cơ hội cho lao động tri thức"
+              credit="World Economic Forum · Future of Jobs Report 2025"
+              sourceUrl="https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf"
+            />
+            <MediaFigure
+              title="Nghề suy giảm mạnh"
+              src={wefJobs2}
+              alt="Biểu đồ WEF: tăng trưởng và suy giảm việc làm theo nghề 2025-2030"
+              caption="Nhập liệu, thu ngân, bưu điện… — nguy cơ bị thay thế bởi tự động hóa"
+              credit="World Economic Forum · Future of Jobs Report 2025"
+              sourceUrl="https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf"
+            />
+          </MediaGrid>
+        </MediaBlock>
       </section>
 
       {/* ══════════════ FOOTER ══════════════ */}
