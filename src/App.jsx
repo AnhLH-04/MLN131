@@ -317,63 +317,191 @@ export default function App() {
           </p>
         </div>
 
+        {/* ── 1. Khái niệm và đặc điểm ── */}
+        <div className="sub-heading reveal">
+          <span className="sub-num">1</span>
+          <h3>Khái niệm và đặc điểm của giai cấp công nhân</h3>
+        </div>
+
+        <p className="section-intro reveal">
+          Theo chủ nghĩa Mác – Lênin, giai cấp công nhân là giai cấp ra đời và phát triển cùng với
+          nền đại công nghiệp tư bản chủ nghĩa. C. Mác và Ph. Ăngghen dùng nhiều thuật ngữ như{' '}
+          <em>giai cấp vô sản</em>, <em>giai cấp vô sản hiện đại</em>,{' '}
+          <em>giai cấp công nhân hiện đại</em>… để chỉ lực lượng lao động đại diện cho nền sản xuất
+          tiên tiến. Giai cấp công nhân được xác định trên hai phương diện:
+        </p>
+
         <div className="grid two">
           <article className="card reveal delay-1">
-            <h3>Khái niệm và đặc điểm</h3>
-            <p>
-              Giai cấp công nhân ra đời cùng nền đại công nghiệp, đại diện cho lực lượng sản xuất
-              tiên tiến và phương thức sản xuất hiện đại.
-            </p>
-            <div className="pill-group">
-              <span className="pill">Sản phẩm của đại công nghiệp</span>
-              <span className="pill">Không sở hữu tư liệu sản xuất</span>
-              <span className="pill">Bán sức lao động để sinh sống</span>
-            </div>
+            <h3>Phương diện kinh tế – xã hội</h3>
             <ul className="list">
-              <li>Lao động bằng phương thức công nghiệp hiện đại, sử dụng máy móc.</li>
-              <li>Tính tổ chức, kỷ luật và xã hội hóa cao.</li>
-              <li>Đại biểu cho xu hướng phát triển tiến bộ của xã hội.</li>
+              <li>Là sản phẩm và chủ thể của nền đại công nghiệp.</li>
+              <li>Lao động bằng phương thức công nghiệp hiện đại, sử dụng máy móc và công nghệ.</li>
+              <li>Lao động mang tính xã hội hóa cao, tạo ra năng suất lao động lớn.</li>
+              <li>Đại diện cho lực lượng sản xuất tiên tiến và phương thức sản xuất hiện đại.</li>
             </ul>
           </article>
-
           <article className="card reveal delay-2">
-            <h3>Sứ mệnh lịch sử</h3>
-            <p>
-              Thông qua Đảng Cộng sản, giai cấp công nhân lãnh đạo nhân dân lao động xóa bỏ bóc
-              lột, xây dựng xã hội xã hội chủ nghĩa và cộng sản chủ nghĩa.
-            </p>
+            <h3>Phương diện chính trị – xã hội</h3>
             <ul className="list">
-              <li><strong>Kinh tế:</strong> tạo cơ sở vật chất, thúc đẩy lực lượng sản xuất.</li>
-              <li><strong>Chính trị – xã hội:</strong> giành chính quyền, xây dựng dân chủ XHCN.</li>
-              <li><strong>Văn hóa – tư tưởng:</strong> xây dựng hệ giá trị mới và con người mới.</li>
+              <li>Không sở hữu tư liệu sản xuất chủ yếu.</li>
+              <li>Phải bán sức lao động để sinh sống.</li>
+              <li>Bị giai cấp tư sản bóc lột giá trị thặng dư.</li>
+              <li>Có lợi ích đối lập trực tiếp với giai cấp tư sản.</li>
             </ul>
           </article>
         </div>
 
+        <div className="callout reveal">
+          <h3>Khẳng định của chủ nghĩa Mác – Lênin</h3>
+          <p>
+            Giai cấp công nhân là một tập đoàn xã hội ổn định, hình thành và phát triển cùng với
+            quá trình phát triển của nền công nghiệp hiện đại; là giai cấp đại diện cho lực lượng
+            sản xuất tiên tiến; là lực lượng chủ yếu của tiến trình lịch sử quá độ từ chủ nghĩa tư
+            bản lên chủ nghĩa xã hội.
+          </p>
+        </div>
+
         <div className="grid three">
           <article className="card soft reveal delay-1">
-            <h3>Điều kiện khách quan</h3>
+            <h3>Lao động bằng phương thức công nghiệp hiện đại</h3>
             <ul className="list">
-              <li>Địa vị kinh tế của giai cấp công nhân trong nền đại công nghiệp.</li>
-              <li>Tạo ra phần lớn của cải vật chất xã hội.</li>
-              <li>Có khả năng lãnh đạo xây dựng phương thức sản xuất mới.</li>
+              <li>Công cụ lao động chủ yếu là máy móc.</li>
+              <li>Lao động có tính tổ chức và xã hội hóa cao.</li>
+              <li>Tạo ra năng suất lao động lớn.</li>
             </ul>
           </article>
           <article className="card soft reveal delay-2">
-            <h3>Điều kiện chủ quan</h3>
+            <h3>Đại biểu cho lực lượng sản xuất tiên tiến</h3>
             <ul className="list">
-              <li>Phát triển về số lượng, chất lượng và trình độ chính trị.</li>
-              <li>Vai trò của Đảng Cộng sản – đội tiên phong.</li>
-              <li>Liên minh công – nông – các tầng lớp lao động khác.</li>
+              <li>Là sản phẩm của nền đại công nghiệp.</li>
+              <li>Giữ vai trò quyết định trong sản xuất vật chất hiện đại.</li>
+              <li>Đại diện cho xu hướng phát triển tiến bộ của xã hội.</li>
             </ul>
           </article>
           <article className="card soft reveal delay-3">
-            <h3>Kết luận phần I</h3>
-            <p>
-              Giai cấp công nhân là lực lượng chủ yếu của tiến trình lịch sử quá độ từ chủ nghĩa
-              tư bản lên chủ nghĩa xã hội.
-            </p>
+            <h3>Tính tổ chức, kỷ luật và tinh thần cách mạng triệt để</h3>
+            <ul className="list">
+              <li>Được rèn luyện trong môi trường công nghiệp hiện đại.</li>
+              <li>Có ý thức tổ chức, hợp tác và kỷ luật cao.</li>
+              <li>Có khả năng đoàn kết và lãnh đạo cách mạng.</li>
+            </ul>
           </article>
+        </div>
+
+        {/* ── 2. Nội dung sứ mệnh lịch sử ── */}
+        <div className="sub-heading reveal">
+          <span className="sub-num">2</span>
+          <h3>Nội dung sứ mệnh lịch sử của giai cấp công nhân</h3>
+        </div>
+
+        <div className="callout reveal">
+          <h3>Định nghĩa</h3>
+          <p>
+            Sứ mệnh lịch sử của giai cấp công nhân là thông qua Đảng Cộng sản lãnh đạo nhân dân
+            lao động đấu tranh xóa bỏ chế độ bóc lột, xây dựng xã hội xã hội chủ nghĩa và cộng
+            sản chủ nghĩa.
+          </p>
+        </div>
+
+        <div className="grid three">
+          <article className="card reveal delay-1">
+            <h3>Nội dung kinh tế</h3>
+            <ul className="list">
+              <li>Là lực lượng sản xuất hàng đầu của xã hội hiện đại.</li>
+              <li>Tạo ra cơ sở vật chất – kỹ thuật cho xã hội mới.</li>
+              <li>Thúc đẩy lực lượng sản xuất phát triển.</li>
+              <li>Xây dựng quan hệ sản xuất mới dựa trên chế độ công hữu về tư liệu sản xuất.</li>
+              <li>Thực hiện công nghiệp hóa, hiện đại hóa đất nước.</li>
+            </ul>
+          </article>
+          <article className="card reveal delay-2">
+            <h3>Nội dung chính trị – xã hội</h3>
+            <ul className="list">
+              <li>Đấu tranh lật đổ sự thống trị của giai cấp tư sản.</li>
+              <li>Giành chính quyền về tay nhân dân lao động.</li>
+              <li>Thiết lập nhà nước mang bản chất giai cấp công nhân.</li>
+              <li>Xây dựng nền dân chủ xã hội chủ nghĩa.</li>
+              <li>Thực hiện công bằng, bình đẳng và tiến bộ xã hội.</li>
+            </ul>
+          </article>
+          <article className="card reveal delay-3">
+            <h3>Nội dung văn hóa – tư tưởng</h3>
+            <ul className="list">
+              <li>Xây dựng hệ giá trị mới: lao động, công bằng, dân chủ, bình đẳng, tự do.</li>
+              <li>Đấu tranh xóa bỏ tư tưởng lạc hậu, phản động.</li>
+              <li>Xây dựng nền văn hóa xã hội chủ nghĩa.</li>
+              <li>Phát triển con người mới xã hội chủ nghĩa.</li>
+              <li>Củng cố hệ tư tưởng của giai cấp công nhân là chủ nghĩa Mác – Lênin.</li>
+            </ul>
+          </article>
+        </div>
+
+        {/* ── 3. Điều kiện ── */}
+        <div className="sub-heading reveal">
+          <span className="sub-num">3</span>
+          <h3>Những điều kiện quy định và thực hiện sứ mệnh lịch sử</h3>
+        </div>
+
+        <div className="grid two">
+          <article className="card reveal delay-1">
+            <h3>Điều kiện khách quan</h3>
+            <div className="card-sub">
+              <h4>Địa vị kinh tế</h4>
+              <ul className="list">
+                <li>Là sản phẩm của nền đại công nghiệp.</li>
+                <li>Đại diện cho lực lượng sản xuất hiện đại.</li>
+                <li>Tạo ra phần lớn của cải vật chất cho xã hội.</li>
+                <li>Có khả năng lãnh đạo xây dựng phương thức sản xuất mới.</li>
+              </ul>
+            </div>
+            <div className="card-sub">
+              <h4>Địa vị chính trị – xã hội</h4>
+              <ul className="list">
+                <li>Bị bóc lột trong CNTB nên có tinh thần cách mạng triệt để.</li>
+                <li>Có tính tổ chức, kỷ luật và đoàn kết cao.</li>
+                <li>Có lợi ích thống nhất với nhân dân lao động.</li>
+                <li>Được trang bị lý luận cách mạng là chủ nghĩa Mác – Lênin.</li>
+              </ul>
+            </div>
+          </article>
+          <article className="card reveal delay-2">
+            <h3>Điều kiện chủ quan</h3>
+            <div className="card-sub">
+              <h4>Sự phát triển của bản thân giai cấp công nhân</h4>
+              <ul className="list">
+                <li>Phát triển cả về số lượng và chất lượng.</li>
+                <li>Nâng cao trình độ chính trị, ý thức giai cấp.</li>
+                <li>Làm chủ khoa học – công nghệ hiện đại.</li>
+              </ul>
+            </div>
+            <div className="card-sub">
+              <h4>Vai trò của Đảng Cộng sản</h4>
+              <ul className="list">
+                <li>Là đội tiên phong của giai cấp công nhân.</li>
+                <li>Lãnh đạo và tổ chức phong trào cách mạng.</li>
+                <li>Đại diện cho lợi ích của giai cấp công nhân và nhân dân lao động.</li>
+              </ul>
+            </div>
+            <div className="card-sub">
+              <h4>Liên minh giai cấp</h4>
+              <ul className="list">
+                <li>Liên minh giữa giai cấp công nhân, nông dân, các tầng lớp lao động khác.</li>
+                <li>Dưới sự lãnh đạo của Đảng Cộng sản.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div className="callout reveal">
+          <h3>Kết luận phần I</h3>
+          <p>
+            Theo chủ nghĩa Mác – Lênin, giai cấp công nhân là giai cấp đại diện cho lực lượng sản
+            xuất tiên tiến và xu thế phát triển tất yếu của lịch sử. Với địa vị kinh tế – xã hội và
+            những phẩm chất cách mạng đặc biệt, giai cấp công nhân có sứ mệnh lịch sử lãnh đạo nhân
+            dân lao động xóa bỏ chủ nghĩa tư bản, xây dựng chủ nghĩa xã hội và tiến tới chủ nghĩa
+            cộng sản.
+          </p>
         </div>
 
         <MediaBlock title="Minh họa: Hai chiều của giai cấp công nhân Việt Nam">

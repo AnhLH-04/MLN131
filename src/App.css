@@ -324,6 +324,30 @@
 .reveal.delay-4 { transition-delay:0.34s; }
 .reveal.delay-5 { transition-delay:0.42s; }
 
+/* Sub-section heading */
+.sub-heading {
+  display:flex; align-items:center; gap:14px;
+  padding-bottom:14px;
+  border-bottom:1px solid var(--border);
+}
+.sub-heading h3 { font-size:18px; font-weight:800; color:var(--text-h); margin:0; }
+.sub-num {
+  width:32px; height:32px; border-radius:8px; flex-shrink:0;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:white; font-size:14px; font-weight:800;
+  display:flex; align-items:center; justify-content:center;
+}
+
+/* Section intro paragraph */
+.section-intro { font-size:15px; color:var(--text); line-height:1.78; max-width:820px; }
+
+/* Card sub-section */
+.card-sub { display:flex; flex-direction:column; gap:8px; }
+.card-sub h4 {
+  font-size:13px; font-weight:700; color:var(--accent); margin:0 0 2px;
+  padding-bottom:5px; border-bottom:1px dashed rgba(99,102,241,0.2);
+}
+
 /* ══════════════
    GRID
 ══════════════ */
