@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import {
-  brickFactory,
+  congNhanCaoSu1919,
   hoaBinhDam,
   metroSaigon,
-  nationalAssembly,
+  moHongGai1904,
   powerPlant1900,
   studentsAi,
   textileFactory,
+  thoMoClotilde1930,
+  thoMoDongTrieu1942,
   tonkinCraft,
   tramSaigon1900,
   vibeCoding,
@@ -362,6 +364,28 @@ export default function App() {
           </p>
         </div>
 
+        <MediaBlock title="Giai cấp công nhân Việt Nam thời thuộc địa — hai phương diện">
+          <MediaGrid columns={2}>
+            <MediaFigure
+              title="Kinh tế – xã hội: Lao động công nghiệp trong lòng đất"
+              src={thoMoDongTrieu1942}
+              alt="Công nhân mỏ than Đông Triều trong đường hầm ngầm, 1942"
+              caption="Thợ mỏ than Đông Triều bên trong đường hầm được chống bằng cột gỗ (1942) — lao động bằng phương thức công nghiệp hiện đại, tính tổ chức và xã hội hóa cao"
+              credit="Imprimerie d'Extrême-Orient, Hà Nội · 1942 · Public Domain"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:Mine_workers_of_the_%C4%90%C3%B4ng_Tri%E1%BB%81u_coal_company_inside_an_underground_tunnel_supported_by_mine_props_(Les_charbonnages_du_%C4%90%C3%B4ng_Tri%E1%BB%81u,_Hanoi,_Imprim%C3%A9rie_d%E2%80%99Extr%C3%AAme-Orient,_1942,_19).jpg"
+            />
+            <MediaFigure
+              portrait
+              title="Chính trị – xã hội: Bóc lột giá trị thặng dư"
+              src={congNhanCaoSu1919}
+              alt="Công nhân cạo mủ cao su tại đồn điền Suzannah, Nam Kỳ, 1919"
+              caption="Công nhân cạo mủ cao su đồn điền Suzannah, Nam Kỳ (1919) — không sở hữu tư liệu sản xuất, bán sức lao động, bị bóc lột giá trị thặng dư bởi tư bản thực dân"
+              credit="Philippe Desolme · BnF / CIRAD · 1919 · Public Domain"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:Ouvrier_de_la_plantation_Suzannah_en_Cochinchine_%C3%A0_c%C3%B4t%C3%A9_d%27un_h%C3%A9v%C3%A9a_sur_lequel_il_a_pratiqu%C3%A9_la_saign%C3%A9e_(une_encoche_1-3)_-_Philippe_Desolme_-_btv1b101037192.jpg"
+            />
+          </MediaGrid>
+        </MediaBlock>
+
         <div className="grid three">
           <article className="card soft reveal delay-1">
             <h3>Lao động bằng phương thức công nghiệp hiện đại</h3>
@@ -504,23 +528,23 @@ export default function App() {
           </p>
         </div>
 
-        <MediaBlock title="Minh họa: Hai chiều của giai cấp công nhân Việt Nam">
+        <MediaBlock title="Cơ sở công nghiệp khai khoáng — nơi giai cấp công nhân Việt Nam hình thành">
           <MediaGrid columns={2}>
             <MediaFigure
-              title="Kinh tế – xã hội: Hình thành cùng công nghiệp"
-              src={brickFactory}
-              alt="Xưởng gạch Bourgoin và Meiffre tại Hà Nội, khoảng 1900"
-              caption="Xưởng gạch Bourgoin & Meiffre, Hà Nội (khoảng 1900) — lao động công nghiệp thời thuộc địa"
-              credit="Robert Dubois, Xứ Bắc Kỳ (1900) · Wikimedia Commons"
-              sourceUrl="https://commons.wikimedia.org/wiki/File:X%C6%B0%E1%BB%9Fng_G%E1%BA%A1ch_c%E1%BB%A7a_c%C3%A1c_%C3%B4ng_Bourgoin_v%C3%A0_Meiffre_t%E1%BA%A1i_H%C3%A0_N%E1%BB%99i_(s%C3%A1ch_X%E1%BB%A9_B%E1%BA%AFc_K%E1%BB%B3_c%E1%BB%A7a_Robert_Dubois_n%C4%83m_1900).png"
+              title="Thợ mỏ than Clotilde-Louise, Đông Triều (~1930)"
+              src={thoMoClotilde1930}
+              alt="Công nhân mỏ than Clotilde-Louise, Đông Triều, khoảng 1930"
+              caption="Thợ mỏ đứng trước máng trượt nghiêng mỏ Clotilde-Louise (Charbonnages du Đông Triều, ~1930) — những công nhân có tổ chức sớm nhất của Việt Nam, tiền đề cho phong trào lao động cách mạng"
+              credit="Gaston Dupont · Coll. Dr. Olivier Dupont · ~1930 · Public Domain"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:Charbonnages_du_D%C3%B4ng-Tri%C3%AAu_-_Ouvriers_pres_d%27un_plan_incline_(de_mine_Clotilde-Louise)_(Photo_de_l%E2%80%99ing%C3%A9nieur_Gaston_Dupont,_Coll._du_Dr._Olivier_Dupont,_ca_1930).jpg"
             />
             <MediaFigure
-              title="Chính trị – pháp lý: Hiến pháp & bản chất Nhà nước"
-              src={nationalAssembly}
-              alt="Tòa nhà Quốc hội Việt Nam, Quảng trường Ba Đình, Hà Nội"
-              caption="Nhà Quốc hội — thể chế pháp lý khẳng định vai trò giai cấp công nhân và liên minh công – nông – trí thức"
-              credit="Wikimedia Commons"
-              sourceUrl="https://commons.wikimedia.org/wiki/File:National_Assembly_Building_of_Vietnam.jpg"
+              title="Mỏ than Hòn Gai (Hồng Gai), Bắc Kỳ (~1904)"
+              src={moHongGai1904}
+              alt="Bưu ảnh mỏ than Hồng Gai với xe goòng kéo bằng trâu, Bắc Kỳ, khoảng 1904"
+              caption="Mỏ than Hòn Gai (~1904) — mỏ than lớn nhất Đông Dương, nơi hàng ngàn công nhân người Việt làm việc trong điều kiện hà khắc dưới sự bóc lột của tư bản thực dân Pháp"
+              credit="Société française des charbonnages du Tonkin · ~1904 · Public Domain"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:Vietnam_ex_Tonkin_-_carte_photo_Hongay,_mine_de_charbon_%27wagonnets_tir%C3%A9s_par_des_buffles%27_(voyag%C3%A9e_1904).jpg"
             />
           </MediaGrid>
         </MediaBlock>

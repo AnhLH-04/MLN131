@@ -1,5 +1,10 @@
 /* Asset URLs — short filenames for reliable Vercel deploy */
 
+export const thoMoDongTrieu1942  = new URL('./tho-mo-dong-trieu-1942.jpg',  import.meta.url).href
+export const congNhanCaoSu1919   = new URL('./cong-nhan-cao-su-1919.jpg',   import.meta.url).href
+export const thoMoClotilde1930   = new URL('./tho-mo-clotilde-1930.jpg',    import.meta.url).href
+export const moHongGai1904       = new URL('./mo-hong-gai-1904.jpg',        import.meta.url).href
+
 export const nationalAssembly = new URL('./quoc-hoi.jpg', import.meta.url).href
 export const brickFactory = new URL('./xuong-gach-1900.png', import.meta.url).href
 export const powerPlant1900 = new URL('./nha-may-dien-1900.jpg', import.meta.url).href
